@@ -1,0 +1,27 @@
+== sürüm parmak izi (sha256) ==
+0ff0f4bbe7e30e2997cdd65507f2da419aaabb32aa8b3986ea91ed7b4ea2d85e  lbbd_v2/baseline/solver.py
+152ce490c46b7607dcc43a680bc42d83a89c4bf77040b22dae02d3bf8183df3b  lbbd_v2/baseline/config.py
+daede7881646fe36e5abac626676f614d78c992f943a65676d39f912c5213434  lbbd_v2/baseline/runner.py
+301a68cd3f23c0d455b17ee11c251f2b9f3916e705b68771c7fb34cc67443443  lbbd_v2/baseline/subproblem.py
+519abf93d7f949d45e27349efd2c53aadc1b8ee4918a394f05c0a9e8ba9a0026  lbbd_v2/baseline/subproblem_groupagg.py
+d11418ced70411df454276345049b194d2bc882fd53dcfd7af28b1142a080ae5  lbbd_v2/lbbd_cuts.py
+df9ffba24438bb603d880949e7a450b038af4882598b4d9cc3578d65264c5b5a  lbbd_v2/lbbd_subproblem_resource.py
+3d2d8c5f8d7476afc5582be0375344c847aeac0155b8a853f59bde0a63493e39  inputs/inputs_5x5_2.xlsx
+gurobi (12, 0, 3) python 3.9.6
+Now drawing from 'Battery Power'
+== KOL 1: ctrl FS (Thu Sep 24 20:17:47 +03 2026) ==
+/Users/burcualtunoglu/lbbd_bireysel_20260831/lbbd_v2/preprocessing.py:292: RuntimeWarning: t^s_UB fell back to the global sum (|Nf|=22 exceeds the Held-Karp guard, or no in-graph root): M_d is the LOOSE horizon, not the tightened longest-ignition-path bound. Still valid, only weaker.
+  M_d, M_i, M_s, aux = compute_big_m(inst, cfg)
+Set parameter Username
+Set parameter LicenseID to value <GIZLENDI>
+Academic license - for non-commercial use only - expires 2027-06-22
+[C0+C0p+C3+FLOW+MTC+S11+WARM+PRE+K5+K7+FILT+MD+SEED+SEEDLS | inputs_5x5_2] status=TIME_LIMIT LB=1382.06 UB=1390.59 gap=0.00614 iters=6 runtime=1800.0s -> C0+C0p+C3+FLOW+MTC+S11+WARM+PRE+K5+K7+FILT+MD+SEED+SEEDLS__inputs_5x5_2__midpoint__seed0__g0__t0__c1__ctrl__20260924_204747__a7a3b685.json
+== KOL 2: FS+GAGG (Thu Sep 24 20:47:47 +03 2026) ==
+/Users/burcualtunoglu/lbbd_bireysel_20260831/lbbd_v2/preprocessing.py:292: RuntimeWarning: t^s_UB fell back to the global sum (|Nf|=22 exceeds the Held-Karp guard, or no in-graph root): M_d is the LOOSE horizon, not the tightened longest-ignition-path bound. Still valid, only weaker.
+  M_d, M_i, M_s, aux = compute_big_m(inst, cfg)
+Set parameter Username
+Set parameter LicenseID to value <GIZLENDI>
+Academic license - for non-commercial use only - expires 2027-06-22
+[C0+C0p+C3+FLOW+MTC+S11+WARM+PRE+K5+K7+FILT+MD+SEED+SEEDLS+GAGG | inputs_5x5_2] status=TIME_LIMIT LB=1382.23 UB=1387.68 gap=0.00393 iters=6 runtime=1800.1s -> C0+C0p+C3+FLOW+MTC+S11+WARM+PRE+K5+K7+FILT+MD+SEED+SEEDLS+GAGG__inputs_5x5_2__midpoint__seed0__g0__t0__c1__GAGG__20260924_211748__41622268.json
+Now drawing from 'AC Power'
+TUMU BITTI Thu Sep 24 21:17:48 +03 2026

@@ -1,0 +1,28 @@
+| kol | sonlanma | LB | UB | gap | yineleme | süre | CPU/duvar | tohum LB | tohum sonrası LB artışı | birleşik SP çağrısı | tekil SP çözümü | ölü olay | ölü tekrar (aynı i,r,Δ) | en çok tekrar | kesme: tekil imza | kesme: öncül | kesme: apriori sabitleme | SDC baskınlık | SP motoru | master süresi (s) | SP duvar (s) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| SDC | TIME_LIMIT | 1313.983 | 4066.639 | 67.69% | 33 | 1800 | 0.999 | 1313.983 | 0.000 | 24 | 559 | 27 | 0 | 1 | 0 | 0 | 7 | 0 | strong_resource | 1438 | 3 |
+| ctrl | TIME_LIMIT | 1313.983 | 5334.514 | 75.37% | 173 | 1800 | 0.999 | 1313.983 | 0.000 | 0 | 2481 | 813 | 769 | 171 | 813 | 0 | 0 | 0 | strong_resource | 1672 | 0 |
+
+== UB(t) / LB(t) ==
+| kol | UB@150 | UB@300 | UB@600 | UB@900 | UB@1200 | UB@1500 | UB@1800 | LB@150 | LB@300 | LB@600 | LB@900 | LB@1200 | LB@1500 | LB@1800 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| SDC | 4912.94 | 4249.09 | 4108.23 | 4096.06 | 4078.41 | 4067.54 | 4066.64 | 1313.98 | 1313.98 | 1313.98 | 1313.98 | 1313.98 | 1313.98 | 1313.98 |
+| ctrl | 5339.27 | 5337.16 | 5335.84 | 5335.39 | 5335.06 | 5334.79 | 5334.51 | 1313.98 | 1313.98 | 1313.98 | 1313.98 | 1313.98 | 1313.98 | 1313.98 |
+
+== kesme türleri ==
+SDC {'singleton_pred_t': 46, 'cell_optimality': 773, 'conflict_infeasible': 24}
+ctrl {'singleton_infeasible': 813}
+
+== birleşik SP çağrıları (ilk 12) ==
+  SDC it5 t=121 |C|=46 INFEASIBLE_PROVEN obj=None bound=None süre=0.0 cuts=45 UB=5195.52 LB=1313.98
+  SDC it7 t=126 |C|=60 INFEASIBLE_PROVEN obj=None bound=None süre=0.0 cuts=55 UB=4912.94 LB=1313.98
+  SDC it9 t=153 |C|=64 INFEASIBLE_PROVEN obj=None bound=None süre=0.1 cuts=51 UB=4632.82 LB=1313.98
+  SDC it10 t=169 |C|=72 INFEASIBLE_PROVEN obj=None bound=None süre=0.1 cuts=56 UB=4509.85 LB=1313.98
+  SDC it12 t=190 |C|=68 INFEASIBLE_PROVEN obj=None bound=None süre=0.0 cuts=40 UB=4383.20 LB=1313.98
+  SDC it13 t=228 |C|=64 INFEASIBLE_PROVEN obj=None bound=None süre=0.1 cuts=35 UB=4328.52 LB=1313.98
+  SDC it14 t=256 |C|=69 INFEASIBLE_PROVEN obj=None bound=None süre=0.0 cuts=41 UB=4249.09 LB=1313.98
+  SDC it15 t=303 |C|=71 INFEASIBLE_PROVEN obj=None bound=None süre=0.1 cuts=42 UB=4216.15 LB=1313.98
+  SDC it16 t=334 |C|=66 INFEASIBLE_PROVEN obj=None bound=None süre=0.0 cuts=37 UB=4209.11 LB=1313.98
+  SDC it17 t=355 |C|=67 INFEASIBLE_PROVEN obj=None bound=None süre=0.1 cuts=34 UB=4184.93 LB=1313.98
+  SDC it18 t=373 |C|=68 INFEASIBLE_PROVEN obj=None bound=None süre=0.1 cuts=36 UB=4176.00 LB=1313.98
+  SDC it19 t=406 |C|=68 INFEASIBLE_PROVEN obj=None bound=None süre=0.1 cuts=32 UB=4149.33 LB=1313.98

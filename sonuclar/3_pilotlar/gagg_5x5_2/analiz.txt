@@ -1,0 +1,28 @@
+| kol | sonlanma | LB | UB | gap | yineleme | süre | CPU/duvar | tohum LB | tohum sonrası LB artışı | birleşik SP çağrısı | tekil SP çözümü | ölü olay | ölü tekrar (aynı i,r,Δ) | en çok tekrar | kesme: tekil imza | kesme: öncül | kesme: apriori sabitleme | SDC baskınlık | SP motoru | master süresi (s) | SP duvar (s) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| GAGG | TIME_LIMIT | 1382.234 | 1387.681 | 0.39% | 6 | 1800 | 0.999 | 1382.234 | 0.000 | 6 | 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | group_agg | 0 | 1679 |
+| ctrl | TIME_LIMIT | 1382.057 | 1390.590 | 0.61% | 6 | 1800 | 0.999 | 1381.935 | 0.122 | 6 | 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | strong_resource | 0 | 1679 |
+
+== UB(t) / LB(t) ==
+| kol | UB@120 | UB@420 | UB@720 | UB@1020 | UB@1320 | UB@1620 | UB@1800 | LB@120 | LB@420 | LB@720 | LB@1020 | LB@1320 | LB@1620 | LB@1800 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| GAGG | - | - | 1401.14 | 1400.58 | 1399.94 | 1387.68 | 1387.68 | - | 1382.23 | 1382.23 | 1382.23 | 1382.23 | 1382.23 | 1382.23 |
+| ctrl | - | - | 1401.14 | 1400.58 | 1399.94 | 1390.59 | 1390.59 | - | 1381.93 | 1382.06 | 1382.06 | 1382.06 | 1382.06 | 1382.06 |
+
+== kesme türleri ==
+GAGG {'cell_optimality': 13, 'dual_bound': 4}
+ctrl {'cell_optimality': 13, 'dual_bound': 4}
+
+== birleşik SP çağrıları (ilk 12) ==
+  GAGG it1 t=421 |C|=3 TIME_LIMIT_WITH_INCUMBENT obj=123.52977600940864 bound=128.9772301871665 süre=300.0 cuts=4 UB=1401.14 LB=1382.23
+  GAGG it2 t=721 |C|=7 TIME_LIMIT_WITH_INCUMBENT obj=302.62543185239554 bound=303.63059732761036 süre=300.0 cuts=6 UB=1400.58 LB=1382.23
+  GAGG it3 t=1021 |C|=10 TIME_LIMIT_WITH_INCUMBENT obj=565.3282136387619 bound=579.3767028312689 süre=300.0 cuts=6 UB=1399.94 LB=1382.23
+  GAGG it4 t=1321 |C|=3 TIME_LIMIT_WITH_INCUMBENT obj=123.52977600940864 bound=128.9772301871665 süre=300.0 cuts=0 UB=1387.68 LB=1382.23
+  GAGG it5 t=1621 |C|=3 TIME_LIMIT_WITH_INCUMBENT obj=123.52977600940864 bound=128.9772301871665 süre=300.0 cuts=0 UB=1387.68 LB=1382.23
+  GAGG it6 t=1800 |C|=3 TIME_LIMIT_WITH_INCUMBENT obj=123.52977587929138 bound=129.43649796987438 süre=179.0 cuts=1 UB=1387.68 LB=1382.23
+  ctrl it1 t=420 |C|=3 TIME_LIMIT_WITH_INCUMBENT obj=123.35289169888621 bound=138.7935705875688 süre=300.0 cuts=4 UB=1401.14 LB=1382.06
+  ctrl it2 t=721 |C|=7 TIME_LIMIT_WITH_INCUMBENT obj=302.6254318220329 bound=303.6288274171873 süre=300.0 cuts=6 UB=1400.58 LB=1382.06
+  ctrl it3 t=1021 |C|=10 TIME_LIMIT_WITH_INCUMBENT obj=565.7720334132684 bound=591.0011963849855 süre=300.0 cuts=6 UB=1399.94 LB=1382.06
+  ctrl it4 t=1321 |C|=3 TIME_LIMIT_WITH_INCUMBENT obj=123.35289169888621 bound=138.7935705875688 süre=300.0 cuts=0 UB=1390.59 LB=1382.06
+  ctrl it5 t=1621 |C|=3 TIME_LIMIT_WITH_INCUMBENT obj=123.35289169888621 bound=138.7935705875688 süre=300.0 cuts=0 UB=1390.59 LB=1382.06
+  ctrl it6 t=1800 |C|=3 TIME_LIMIT_WITH_INCUMBENT obj=123.35289169888621 bound=139.36871534865747 süre=179.2 cuts=1 UB=1390.59 LB=1382.06

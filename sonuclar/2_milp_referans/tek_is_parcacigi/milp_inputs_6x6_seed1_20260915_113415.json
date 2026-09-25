@@ -1,0 +1,38 @@
+{
+  "kind": "milp_reference",
+  "run_id": "inputs_6x6_seed1_1932",
+  "instance": "inputs_6x6",
+  "seed": 1,
+  "timestamp": "20260915_113415",
+  "gurobi_version": "13.0.1",
+  "model": "monolithic_bigmfix",
+  "protocol": {
+    "total_budget_s": 1800.0,
+    "solver_time_limit_s": 1799.085,
+    "method_setup_s": 0.915,
+    "threads": 1,
+    "big_m_margin": 1.0,
+    "bigm_pathlen_max_nodes": 18,
+    "omega_mode": "midpoint",
+    "mip_gap": 0.0
+  },
+  "metrics": {
+    "status": "TIME_LIMIT",
+    "status_code": 9,
+    "has_incumbent": true,
+    "LB": 1759.8150528957312,
+    "UB": 1803.3143736088684,
+    "gap": 0.024121873229504917,
+    "milp_obj": 1759.8150528957312,
+    "milp_bound": 1803.3143736088684,
+    "milp_gap": 0.02471812060111667,
+    "milp_certified": 0,
+    "runtime_s": 1799.09,
+    "opt_time_s": 1799.09,
+    "excel_time_s": 0.1,
+    "sol_count": 10,
+    "n_Nf": 31,
+    "n_K": 150
+  },
+  "excel_file": "result_DUZELTILMIS_inputs_6x6_seed1_20260915_113415.xlsx"
+}
